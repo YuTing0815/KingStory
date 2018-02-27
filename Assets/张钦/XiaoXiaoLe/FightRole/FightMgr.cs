@@ -60,8 +60,6 @@ public class FightMgr : MonoBehaviour
         RoleInfoMgr.Instance.maxTimeRound.text = Levelnum.ToString();
         RoleInfoMgr.Instance.coinCounts.text = role.Money.ToString();
         RoleInfoMgr.Instance.timeRound.text = "1";
-
-
         OnceAgain();//创建敌人并进行初始化
                     //CreateEnemy(1, enemyPrefab[1]);
                     //CreateEnemy(1, enemyPrefab[0]);
