@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1154480849633056}
+  m_IsPrefabParent: 1
+--- !u!1 &1154480849633056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4062293403140732}
+  - component: {fileID: 114944832208410530}
+  m_Layer: 0
+  m_Name: GridCtrol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4062293403140732
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154480849633056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.56, y: -4.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114944832208410530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154480849633056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47e406aedfec244dabd8762e920ed10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateSpriteSave: []
+  initialPieces: []
+  xDim: 0
+  yDim: 0
+  fillTime: 0.1
+  piecePrefabs:
+  - type: 1
+    prefab: {fileID: 1700241902608164, guid: ebaf3fbeaaaca7645bf87459ff1e3048, type: 2}
+  - type: 2
+    prefab: {fileID: 1303810572117690, guid: a7186f13e89ba0b46871a4894593d582, type: 2}
+  - type: 3
+    prefab: {fileID: 1391549177400604, guid: cb9b2f37ee935a441a7c7f6629553d17, type: 2}
+  - type: 4
+    prefab: {fileID: 1861774204085708, guid: 2a6d6b2b1784b1d4b9bc76579a8e440e, type: 2}
+  - type: 5
+    prefab: {fileID: 1341967355638536, guid: 7bb0e36d8533edb4ea1380e2bf1fd195, type: 2}
+  - type: 0
+    prefab: {fileID: 1192534157130848, guid: f9b77c351aa65cf4b8e92e7a7833e832, type: 2}
+  level: {fileID: 0}
+  BackGroundPrefab: {fileID: 1230617395154776, guid: c84ef5ae2d28c6c43967a27c80c8f989,
+    type: 2}

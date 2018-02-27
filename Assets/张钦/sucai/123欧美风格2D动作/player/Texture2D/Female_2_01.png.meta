@@ -1,0 +1,700 @@
+fileFormatVersion: 2
+guid: 10cc90f714f58c24b8ce02584d125df3
+timeCreated: 1509620641
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Female_2_01_0
+    21300002: Female_2_01_1
+    21300004: Female_2_01_2
+    21300006: Female_2_01_3
+    21300008: Female_2_01_4
+    21300010: Female_2_01_5
+    21300012: Female_2_01_6
+    21300014: Female_2_01_7
+    21300016: Female_2_01_8
+    21300018: Female_2_01_9
+    21300020: Female_2_01_10
+    21300022: Female_2_01_11
+    21300024: Female_2_01_12
+    21300026: Female_2_01_13
+    21300028: Female_2_01_14
+    21300030: Female_2_01_15
+    21300032: Female_2_01_16
+    21300034: Female_2_01_17
+    21300036: Female_2_01_18
+    21300038: Female_2_01_19
+    21300040: Female_2_01_20
+    21300042: Female_2_01_21
+    21300044: Female_2_01_22
+    21300046: Female_2_01_23
+    21300048: Female_2_01_24
+    21300050: Female_2_01_25
+    21300052: Female_2_01_26
+    21300054: Female_2_01_27
+    21300056: Female_2_01_28
+    21300058: Female_2_01_29
+    21300060: Female_2_01_30
+    21300062: Female_2_01_31
+    21300064: Female_2_01_32
+    21300066: Female_2_01_33
+    21300068: Female_2_01_34
+    21300070: Female_2_01_35
+    21300072: Female_2_01_36
+    21300074: Female_2_01_37
+    21300076: Female_2_01_38
+    21300078: Female_2_01_39
+    21300080: Female_2_01_40
+    21300082: Female_2_01_41
+    21300084: Female_2_01_42
+    21300086: Female_2_01_43
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female_2_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806
+        width: 100
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 843
+        width: 119
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 876
+        width: 183
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 891
+        width: 117
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 892
+        width: 117
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_5
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 897
+        width: 93
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_6
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 899
+        width: 130
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_7
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 898
+        width: 109
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 679
+        width: 93
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 679
+        width: 110
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 679
+        width: 97
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_11
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 680
+        width: 91
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 680
+        width: 105
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_13
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 680
+        width: 122
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_14
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 683
+        width: 95
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 683
+        width: 131
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_16
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 684
+        width: 125
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 557
+        width: 103
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_18
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 557
+        width: 93
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 559
+        width: 110
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_20
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 560
+        width: 131
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_21
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 561
+        width: 151
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_22
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 560
+        width: 144
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_23
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 562
+        width: 145
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_24
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 566
+        width: 132
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 440
+        width: 150
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 440
+        width: 145
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_27
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 441
+        width: 147
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 441
+        width: 147
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_29
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 441
+        width: 145
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_30
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 441
+        width: 145
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_31
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 325
+        width: 148
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_32
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 325
+        width: 150
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_33
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 325
+        width: 148
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_34
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 333
+        width: 190
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_35
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 333
+        width: 190
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_36
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 340
+        width: 159
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 229
+        width: 199
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_38
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 228
+        width: 180
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_39
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 229
+        width: 196
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_40
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 232
+        width: 193
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_41
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 232
+        width: 196
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 142
+        width: 225
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Female_2_01_43
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 142
+        width: 225
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

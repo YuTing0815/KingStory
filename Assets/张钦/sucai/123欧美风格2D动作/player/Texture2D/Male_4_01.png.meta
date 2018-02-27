@@ -1,0 +1,672 @@
+fileFormatVersion: 2
+guid: 232a7031bfddabb4fbaa1b3423124336
+timeCreated: 1509626221
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Male_4_01_0
+    21300002: Male_4_01_1
+    21300004: Male_4_01_2
+    21300006: Male_4_01_3
+    21300008: Male_4_01_4
+    21300010: Male_4_01_5
+    21300012: Male_4_01_6
+    21300014: Male_4_01_7
+    21300016: Male_4_01_8
+    21300018: Male_4_01_9
+    21300020: Male_4_01_10
+    21300022: Male_4_01_11
+    21300024: Male_4_01_12
+    21300026: Male_4_01_13
+    21300028: Male_4_01_14
+    21300030: Male_4_01_15
+    21300032: Male_4_01_16
+    21300034: Male_4_01_17
+    21300036: Male_4_01_18
+    21300038: Male_4_01_19
+    21300040: Male_4_01_20
+    21300042: Male_4_01_21
+    21300044: Male_4_01_22
+    21300046: Male_4_01_23
+    21300048: Male_4_01_24
+    21300050: Male_4_01_25
+    21300052: Male_4_01_26
+    21300054: Male_4_01_27
+    21300056: Male_4_01_28
+    21300058: Male_4_01_29
+    21300060: Male_4_01_30
+    21300062: Male_4_01_31
+    21300064: Male_4_01_32
+    21300066: Male_4_01_33
+    21300068: Male_4_01_34
+    21300070: Male_4_01_35
+    21300072: Male_4_01_36
+    21300074: Male_4_01_37
+    21300076: Male_4_01_38
+    21300078: Male_4_01_39
+    21300080: Male_4_01_40
+    21300082: Male_4_01_41
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Male_4_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 73
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 846
+        width: 73
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 846
+        width: 69
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 844
+        width: 59
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 846
+        width: 70
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 846
+        width: 59
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 872
+        width: 91
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_7
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 882
+        width: 139
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_8
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 883
+        width: 88
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_9
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 888
+        width: 63
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_10
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 891
+        width: 72
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_11
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 891
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 75
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_13
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 712
+        width: 75
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 712
+        width: 117
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_15
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 714
+        width: 85
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 714
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_17
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 714
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_18
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 714
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_19
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 714
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_20
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 714
+        width: 87
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_21
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 714
+        width: 83
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_22
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 714
+        width: 85
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 580
+        width: 84
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_24
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 580
+        width: 83
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_25
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 582
+        width: 97
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_26
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 584
+        width: 102
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_27
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 585
+        width: 107
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_28
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 586
+        width: 111
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_29
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 587
+        width: 103
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_30
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 587
+        width: 99
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_31
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 588
+        width: 103
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_32
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 591
+        width: 94
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 104
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_34
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 460
+        width: 92
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_35
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 460
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_36
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 463
+        width: 96
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_37
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 463
+        width: 143
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_38
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 463
+        width: 147
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_39
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 463
+        width: 147
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_40
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 467
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Male_4_01_41
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 484
+        width: 94
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

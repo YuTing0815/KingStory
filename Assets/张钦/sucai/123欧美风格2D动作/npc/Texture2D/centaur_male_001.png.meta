@@ -1,0 +1,434 @@
+fileFormatVersion: 2
+guid: 01b7088f84fe3e94999cc67c0e914382
+timeCreated: 1510111320
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: centaur_male_001_0
+    21300002: centaur_male_001_1
+    21300004: centaur_male_001_2
+    21300006: centaur_male_001_3
+    21300008: centaur_male_001_4
+    21300010: centaur_male_001_5
+    21300012: centaur_male_001_6
+    21300014: centaur_male_001_7
+    21300016: centaur_male_001_8
+    21300018: centaur_male_001_9
+    21300020: centaur_male_001_10
+    21300022: centaur_male_001_11
+    21300024: centaur_male_001_12
+    21300026: centaur_male_001_13
+    21300028: centaur_male_001_14
+    21300030: centaur_male_001_15
+    21300032: centaur_male_001_16
+    21300034: centaur_male_001_17
+    21300036: centaur_male_001_18
+    21300038: centaur_male_001_19
+    21300040: centaur_male_001_20
+    21300042: centaur_male_001_21
+    21300044: centaur_male_001_22
+    21300046: centaur_male_001_23
+    21300048: centaur_male_001_24
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: centaur_male_001_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 825
+        width: 207
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 861
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 825
+        width: 204
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_3
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 861
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_4
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 827
+        width: 174
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_5
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 827
+        width: 169
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_6
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 828
+        width: 166
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 628
+        width: 172
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_8
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 629
+        width: 171
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 632
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_10
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 638
+        width: 214
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_11
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 638
+        width: 181
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 440
+        width: 176
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 441
+        width: 181
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 440
+        width: 201
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_15
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 442
+        width: 187
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_16
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 440
+        width: 177
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 256
+        width: 180
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_18
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 257
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_19
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 256
+        width: 183
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_20
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 258
+        width: 173
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_21
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 259
+        width: 205
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 74
+        width: 198
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_23
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 74
+        width: 224
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: centaur_male_001_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 77
+        width: 209
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
