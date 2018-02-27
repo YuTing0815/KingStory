@@ -34,7 +34,7 @@ public class InventoryManager:MonoBehaviour {
         UpdateBag();
     }
 
-    void UpdateBag()//查找当前已有的物品并显示在背包中
+    public void UpdateBag()//查找当前已有的物品并显示在背包中
     {
         if (PacketModel.Instance.packetList ==new List<ItemIndex>()) { return; }
         foreach (var item in PacketModel.Instance.packetList)

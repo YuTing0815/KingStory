@@ -34,7 +34,6 @@ public class FightMgr : MonoBehaviour
 
     public Grid grid;
     public StateMgr stateMgr;
-
     static FightMgr fightmgr;
     public static FightMgr Instance
     {

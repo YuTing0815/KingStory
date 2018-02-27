@@ -17,8 +17,7 @@ public class Role : MonoBehaviour,Human {
 
     void Awake () {
         Pos = transform.position;
-        ani = GetComponent<Animator>();
-       
+        ani = GetComponent<Animator>();       
     }
 
     void Update()
@@ -109,7 +108,7 @@ public class MainRole
     public int MaxShield { get; set; }
     public int Shield { get; set; }
     public int Money { get; set; }
-
+    public Equipment equipment;
     public MainRole()
     {
         MaxHp = 100;
@@ -143,6 +142,8 @@ public class MainRole
             Level++;
             if (Level < 5)
             {
+                PhyAttck += 5;
+                MagAttack+=5;
                 MaxHp += 50;
                 MaxShield += 30;
                 Hp = MaxHp;
@@ -152,6 +153,8 @@ public class MainRole
             }
             else
             {
+                PhyAttck += 10;
+                MagAttack += 10;
                 MaxHp += 80;
                 MaxShield += 50;
                 Hp = MaxHp;
