@@ -61,6 +61,15 @@ public class SystemShopAndPackage
             ShopCallBack();
         }
         BackDoTweem();
+        var shopUi = UIManager.Instance.AddUI("Prafbs/UI/Shop/shop", UILayer.Normal);
+        if (shuXing.GetComponent<ShuXingMgr>() == null)
+        {
+            shopUi.AddComponent<ShopMgr>().Init();
+        }
+        else
+        {
+            shopUi.GetComponent<ShuXingMgr>().Init();
+        }
     }
 
     private void OnBtnEquipClick()
