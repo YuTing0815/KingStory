@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -124,6 +126,7 @@
     <Compile Include="Assets\余婷\Scipts_余婷\Common\Timer.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\ConfigTableBase.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\MapTable.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\ShopTable.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\DesignMoshi\Singleton.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Extern.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Tweening.cs" />
@@ -136,6 +139,7 @@
     <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WY.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\ClosePackegeBtn.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\MenuMgr.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShopMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShuXingMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\SystemMenu.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\SystemShopAndPackage.cs" />

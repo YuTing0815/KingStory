@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 54063374211c9dd43856c9fd8efa7e65
+timeCreated: 1519896700
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: KaiTi
+  fontNames:
+  - KaiTi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 81f03ff0e7dac63419d1c7dc08330430, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

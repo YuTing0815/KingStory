@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using DG.Tweening;
 public class MapTranslate : MonoBehaviour
 {
     private static MapTranslate _instance;
@@ -13,7 +13,7 @@ public class MapTranslate : MonoBehaviour
         var mapPath = MapTable.Instance[SaveIndexMgr.Instance.Curindex + 1].MapPath;
         mapObj = GameObject.Instantiate(Resources.Load(mapPath)) as GameObject;
         mapObj.transform.SetParent(modelPlaceObj.transform);
-        RoleInfoMgr.Instance.Init();       
+        RoleInfoMgr.Instance.Init();
     }
     public bool isTranslate = false;
     AudioSource audioSource;
@@ -30,12 +30,12 @@ public class MapTranslate : MonoBehaviour
 
     public void Translate()
     {
-        modelPlaceObj.transform.position = Vector3.Lerp(modelPlaceObj.transform.position, pos, 0.0165f);
-        if (Vector3.Distance(modelPlaceObj.transform.position, pos) < 0.1f)
-        {
-            modelPlaceObj.transform.position = pos;
-            isTranslate = false;
-        }
+        modelPlaceObj.transform.DOMove(pos, 1.8f).SetEase(Ease.Linear).OnComplete(ControlMapMove);
+    }
+
+    private void ControlMapMove()
+    {
+        isTranslate = false;
     }
 
     void Update()
