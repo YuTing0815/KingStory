@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class PacketModel : Singleton<PacketModel>
 {
     //保存背包中的物品
-   public List<ItemIndex> packetList = new List<ItemIndex>() {};//保存获得的物品的信息
+   public List<ItemIndex> packetList = new List<ItemIndex>() ;//保存获得的物品的信息
 
     public void Save(int itemId,int num=1)//传入id将num个物品存入背包
     {
