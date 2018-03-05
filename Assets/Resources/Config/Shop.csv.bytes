@@ -7,4 +7,3 @@ ID,Name,ItemType,Quality,Description,Price,Sprite
 6,斧头,3,5,削木如泥,20,Sprites/Items/axe
 7,铁块,4,1,炼金物品,10,Sprites/Items/ingots
 8,盾牌,2,1,增加防御,20,Sprites/Items/shield
-9,项链,2,1,增加防御,20,Sprites/Items/necklace

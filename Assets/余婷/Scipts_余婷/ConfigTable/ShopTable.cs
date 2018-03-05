@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 
 
-public class ShopTable
+public class ShopTableData
 {
     public int ID;
     public string Name;
@@ -16,7 +16,7 @@ public class ShopTable
 }
 
 // 地图表
-public class ShopTableData : ConfigTableBase<MapTableData, ShopTable>
+public class ShopTable : ConfigTableBase<ShopTableData, ShopTable>
 {
 
 }
