@@ -22,4 +22,9 @@ public class MenuMgr : Singleton<MenuMgr>
     {
         UIManager.Instance.Release(coverImage);
     }
+
+    public void ReleseMenu()
+    {
+        systemMenu.Release_UIRoot();
+    }
 }

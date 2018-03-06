@@ -40,7 +40,23 @@ public class FailOrSuccess : Singleton<FailOrSuccess>
     private void OnBtnBackMainMapFail()
     {
         UIManager.Instance.Release(_failPanel);
-        SceneManager.LoadScene("Scenes/Map");
+        if (SaveIndexMgr.Instance.SaveSceneId == 1)
+        {
+            SceneManager.LoadScene("Scenes/MapOne");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 2)
+        {
+            SceneManager.LoadScene("Scenes/MapTwo");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 3)
+        {
+            SceneManager.LoadScene("Scenes/MapThree");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 4)
+        {
+            SceneManager.LoadScene("Scenes/MapFour");
+        }
+
     }
 
 
@@ -48,7 +64,22 @@ public class FailOrSuccess : Singleton<FailOrSuccess>
     private void OnBtnBackToMainMapSuccess()
     {
         UIManager.Instance.Release(_successPanel);
-        SceneManager.LoadScene("Scenes/Map");
+        if (SaveIndexMgr.Instance.SaveSceneId == 1)
+        {
+            SceneManager.LoadScene("Scenes/MapOne");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 2)
+        {
+            SceneManager.LoadScene("Scenes/MapTwo");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 3)
+        {
+            SceneManager.LoadScene("Scenes/MapThree");
+        }
+        if (SaveIndexMgr.Instance.SaveSceneId == 4)
+        {
+            SceneManager.LoadScene("Scenes/MapFour");
+        }
     }
 
 

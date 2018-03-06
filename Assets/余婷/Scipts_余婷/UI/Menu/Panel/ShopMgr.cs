@@ -82,9 +82,9 @@ public class ShopMgr : MonoBehaviour
         {
             grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Text>("goodName").text=ShopTable.Instance[i+1].Name;
             var mapPath = ShopTable.Instance[i+ 1].Sprite;
-            grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Image>("goodImage").sprite = GameObject.Instantiate(Resources.Load(mapPath)) as Sprite;
-            string text = grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Text>("coinNum").text;
-            grid.gameObject.transform.GetChild(i).GetComponent<Toggle>().onValueChanged.AddListener((isOn) => OpenPropConfirmPanel(text));
+            grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Image>("goodImage").overrideSprite =Resources.Load(mapPath,typeof(Sprite)) as Sprite;
+            grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Text>("coinNum").text=ShopTable.Instance[i + 1].Price.ToString();
+            grid.gameObject.transform.GetChild(i).GetComponent<Toggle>().onValueChanged.AddListener((isOn) => OpenPropConfirmPanel(grid.gameObject.transform.GetChild(i).gameObject.FindComponent<Text>("coinNum").text));
         }
     }
     //道具购买界面的控制
@@ -129,7 +129,10 @@ public class ShopMgr : MonoBehaviour
 
     private void CloseRechargeConfirmPanelOne(string textCoin, string diamondsNum)
     {
-        RoleMgr.Instance.Money -=_coinNum;
+        if (RoleMgr.Instance.Money >= int.Parse(textCoin))
+        {
+            RoleMgr.Instance.Money -= int .Parse(textCoin);
+        }
         _rechargeConfrimPanelOne.gameObject.SetActive(false);
         Debug.Log("RoleMgr Money :" + RoleMgr.Instance.Money);
     }

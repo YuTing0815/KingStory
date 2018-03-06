@@ -1,0 +1,10 @@
+ID,Name,ItemType,Quality,Description,Price,Sprite
+1,血瓶,1,1,可以加血的不明液体,10,Sprites/Items/hp
+2,蓝瓶,1,1,可以加蓝的不明液体·,10,Sprites/Items/mp
+3,胸甲,2,5,被遗弃的胸甲,20,Sprites/Items/armor
+4,皮腰带,2,6,耐用的腰带,20,Sprites/Items/belts
+5,靴子,2,1,跑步专用,20,Sprites/Items/boots
+6,斧头,3,5,削木如泥,20,Sprites/Items/axe
+7,铁块,4,1,炼金物品,10,Sprites/Items/ingots
+8,盾牌,2,1,增加防御,20,Sprites/Items/shield
+9,盾牌,2,1,增加防御,20,Sprites/Items/shield
