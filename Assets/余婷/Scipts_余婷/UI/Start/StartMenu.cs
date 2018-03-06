@@ -10,6 +10,7 @@ public class StartMenu : MonoBehaviour
 {
     //StartMenuPanel按钮 开始页面
     AudioSource audioSource;
+
     RectTransform StartPanel;
     Image gameTitle;
     RectTransform HelpPanel;
@@ -25,6 +26,7 @@ public class StartMenu : MonoBehaviour
 
     //登录界面 
     RectTransform LoginPanel;
+
     RectTransform LoginPanelBg;
     InputField inputLoginUserName;
     InputField inputLoginPassWord;
@@ -35,6 +37,7 @@ public class StartMenu : MonoBehaviour
 
     //注册界面
     RectTransform RegisterPanel;
+
     RectTransform RegisterPanelBg;
     InputField inputRegisterUserName;
     InputField inputRegisterPassWord;
@@ -46,17 +49,18 @@ public class StartMenu : MonoBehaviour
 
     //GameRecordPanel按钮  记录界面
     RectTransform GameRecord;
-    Button oldRecord;
-    Button newRecord1;
-    Button newRecord2;
-    Button returnStartMenuPanel;
-    Vector3 oldRecordPos;
-    Vector3 newRecord1Pos;
-    Vector3 newRecord2Pos;
+
+    Button map1;
+    Button map2;
+    Button map3;
+    Button map4;
+
+    Button returnStartMenuPanelBtn;
+
     // Use this for initialization
     void Awake()
-    {
-        Screen.SetResolution(480,800,false);
+    {       
+        Screen.SetResolution(480, 800, false);
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
         //StartMenuPanel按钮初始化
@@ -69,12 +73,12 @@ public class StartMenu : MonoBehaviour
         btnClose = HelpPanel.gameObject.FindComponent<Button>("btnClose");
         //记录带有动画的物体位置
         gameTitlePos = gameTitle.transform.position;
-        HelpPanelPos=HelpPanel.transform.localScale;
-        btnStartLoginPos=btnStartLogin.transform.position;
-        btnGameHelpPos=btnGameHelp.transform.localScale;
+        HelpPanelPos = HelpPanel.transform.localScale;
+        btnStartLoginPos = btnStartLogin.transform.position;
+        btnGameHelpPos = btnGameHelp.transform.localScale;
         btnExitGamePos = btnExitGame.transform.localScale;
         //播放动画
-       StartCoroutine(ComeStartAni());
+        StartCoroutine(ComeStartAni());
         //响应按钮事件
         btnStartLogin.onClick.AddListener(OnBtnStartLoginClick);
         btnExitGame.onClick.AddListener(OnBtnExitGameClick);
@@ -83,7 +87,7 @@ public class StartMenu : MonoBehaviour
 
         //LoginPanel UI初始化
         LoginPanel = gameObject.FindComponent<RectTransform>("LoginPanel");
-        LoginPanelBg= LoginPanel.gameObject.FindComponent<RectTransform>("bg/loginBg");
+        LoginPanelBg = LoginPanel.gameObject.FindComponent<RectTransform>("bg/loginBg");
         inputLoginUserName = LoginPanel.gameObject.FindComponent<InputField>("bg/loginBg/InputFieldUser");
         inputLoginPassWord = LoginPanel.gameObject.FindComponent<InputField>("bg/loginBg/InputFieldPwd");
         btnLogin = LoginPanel.gameObject.FindComponent<Button>("bg/loginBg/btnLogin");
@@ -104,7 +108,8 @@ public class StartMenu : MonoBehaviour
         RegisterPanelBg = RegisterPanel.gameObject.FindComponent<RectTransform>("bg/registerBg");
         inputRegisterPassWord = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldUser");
         inputRegisterUserName = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldPwd");
-        inputRegisterConfirmPassWord = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputconfirmFieldPwd");
+        inputRegisterConfirmPassWord =
+            RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputconfirmFieldPwd");
         btnRegisterAndLogin = RegisterPanel.gameObject.FindComponent<Button>("bg/registerBg/btnRegisterAndLogin");
         btnCancel = RegisterPanel.gameObject.FindComponent<Button>("bg/registerBg/btnCancel");
         btnRegisterClose = RegisterPanel.gameObject.FindComponent<Button>("bg/registerBg/btnReturn");
@@ -118,20 +123,27 @@ public class StartMenu : MonoBehaviour
 
         //GameRecordPanel按钮初始化
         GameRecord = gameObject.FindComponent<RectTransform>("GameRecord");
-        oldRecord = GameRecord.gameObject.FindComponent<Button>("oldRecord");
-        newRecord1 = GameRecord.gameObject.FindComponent<Button>("newRecord1");
-        newRecord2 = GameRecord.gameObject.FindComponent<Button>("newRecord2");
-        returnStartMenuPanel = GameRecord.gameObject.FindComponent<Button>("ReturnStartMenu");
-        //记录带有动画的物体位置
-        oldRecordPos = oldRecord.transform.position;
-        newRecord1Pos = newRecord1.transform.position;
-        newRecord2Pos = newRecord2.transform.position;
+        map1 = GameRecord.gameObject.FindComponent<Button>("Map1/map1");
+        map2 = GameRecord.gameObject.FindComponent<Button>("Map2/map2");
+        map3 = GameRecord.gameObject.FindComponent<Button>("Map3/map3");
+        map4 = GameRecord.gameObject.FindComponent<Button>("Map4/map4");
+        returnStartMenuPanelBtn = GameRecord.gameObject.FindComponent<Button>("ReturnStartMenu");
         //响应按钮事件
-        oldRecord.onClick.AddListener(OnOldRecordClick);
-        newRecord1.onClick.AddListener(OnNewRecord1Click);
-        newRecord2.onClick.AddListener(OnNewRecord2Click);
-        returnStartMenuPanel.onClick.AddListener(OnReturnStartMenuClick);
+        map1.onClick.AddListener(OnMap1Click);
+        map2.onClick.AddListener(OnMap2Click);
+        map3.onClick.AddListener(OnMap3Click);
+        map4.onClick.AddListener(OnMap4Click);
+        returnStartMenuPanelBtn.onClick.AddListener(OnReturnStartMenuClick);
+
+        if (SaveIndexMgr.Instance.SaveSceneId != 0)
+        {
+            StartPanel.gameObject.SetActive(false);
+            LoginPanel.gameObject.SetActive(false);
+            RegisterPanel.gameObject.SetActive(false);
+            GameRecord.gameObject.SetActive(true);
+        }
     }
+
     //注册界面 取消注册按钮
     private void OnBtnRegisterCancle()
     {
@@ -140,6 +152,7 @@ public class StartMenu : MonoBehaviour
         StartCoroutine(ResetRegisterAni());
         StartCoroutine(ComeLoginAni());
     }
+
     //注册界面 关闭注册面板
     private void OnBtnRegisterClose()
     {
@@ -148,13 +161,13 @@ public class StartMenu : MonoBehaviour
         StartCoroutine(ResetRegisterAni());
         StartCoroutine(ComeLoginAni());
     }
+
     //注册界面 注册并登录按钮
     private void OnBtnRegisterAndLogin()
     {
         GameRecord.gameObject.SetActive(true);
         StartCoroutine(SetActiveObj(RegisterPanel.gameObject));
         StartCoroutine(ResetRegisterAni());
-        StartCoroutine(ComeRecordAni());
     }
 
     //登录面板  按钮点击实现到注册界面
@@ -166,6 +179,7 @@ public class StartMenu : MonoBehaviour
         StartCoroutine(ResetLoginAni());
         StartCoroutine(ComeRegisterAni());
     }
+
     //登录面板 返回首页按钮实现
     private void OnBtnLoginReturnClick()
     {
@@ -176,6 +190,7 @@ public class StartMenu : MonoBehaviour
         StartCoroutine(ResetLoginAni());
 
     }
+
     //登录界面按钮  点击登录按钮实现
     private void OnBtnLoginClick()
     {
@@ -184,39 +199,39 @@ public class StartMenu : MonoBehaviour
         GameRecord.gameObject.SetActive(true);
         StartCoroutine(SetActiveObj(LoginPanel.gameObject));
         StartCoroutine(ResetLoginAni());
-        StartCoroutine(ComeRecordAni());
     }
-    //记录面板中   返回首页按钮实现
+
+    //关卡面板中   返回首页按钮实现
     private void OnReturnStartMenuClick()
     {
-        returnStartMenuPanel.BtnAudioPlay();
+        returnStartMenuPanelBtn.BtnAudioPlay();
         StartPanel.gameObject.SetActive(true);
         StartCoroutine(SetActiveObj(GameRecord.gameObject));
         StartCoroutine(ComeStartAni());
-        StartCoroutine(ResetRecordAni());
     }
-    //记录面板 新纪录2按钮 方法实现
-    private void OnNewRecord2Click()
+
+    //关卡面板中 地图3按钮 方法实现
+    private void OnMap3Click()
     {
-        newRecord1.BtnAudioPlay();
-        StartCoroutine(ResetRecordAni());
-        //与服务器建立连接
+        SceneManager.LoadScene("Scenes/MapThree");
     }
-    //记录面板 新纪录1按钮 方法实现
-    private void OnNewRecord1Click()
+    //关卡面板中 地图4按钮 方法实现
+    private void OnMap4Click()
     {
-        newRecord2.BtnAudioPlay();
-        StartCoroutine(ResetRecordAni());
-        //与服务器建立连接
+        SceneManager.LoadScene("Scenes/MapFour");
     }
-    //记录面板 旧记录按钮 方法实现
-    private void OnOldRecordClick()
+    //关卡面板中 地图2按钮 方法实现
+    private void OnMap2Click()
     {
-        oldRecord.BtnAudioPlay();
-        StartCoroutine(ResetRecordAni());
-        //与服务器建立连接
-        SceneManager.LoadScene("Scenes/Map");
+        SceneManager.LoadScene("Scenes/MapTwo");
     }
+
+    //关卡面板中 地图1按钮 方法实现
+    private void OnMap1Click()
+    {
+        SceneManager.LoadScene("Scenes/MapOne");
+    }
+
     //首页中  帮助按钮点击实现
     private void OnBtnGameHelpClick()
     {
@@ -224,12 +239,14 @@ public class StartMenu : MonoBehaviour
         HelpPanel.gameObject.SetActive(true);
         HelpPanelTween();
     }
+
     //首页中退出按钮  方法实现
     private void OnBtnExitGameClick()
     {
         btnExitGame.BtnAudioPlay();
         Application.Quit();
     }
+
     //首页中 登录按钮点击实现到  登录面板
     private void OnBtnStartLoginClick()
     {
@@ -268,26 +285,30 @@ public class StartMenu : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         StartReset();
     }
+
     //开始界面动画播放
     private void StartCome()
     {
         Tweening.Instance.ComeDoTweenAnimationDOLocalMove(gameTitle.gameObject, new Vector3(0, 359, 0));
-        Tweening.Instance.ComeDoTweenAnimationDOLocalMove(btnStartLogin.gameObject,new Vector3(0,-500,0));
-        Tweening.Instance.ComeDoTweenAnimationDoScale(btnGameHelp.gameObject,new Vector3(1,1,1));
+        Tweening.Instance.ComeDoTweenAnimationDOLocalMove(btnStartLogin.gameObject, new Vector3(0, -500, 0));
+        Tweening.Instance.ComeDoTweenAnimationDoScale(btnGameHelp.gameObject, new Vector3(1, 1, 1));
         Tweening.Instance.ComeDoTweenAnimationDoScale(btnExitGame.gameObject, new Vector3(1, 1, 1));
     }
+
     //开始界面动画反向播放
     private void StartReset()
     {
-        Tweening.Instance.BackDoTweenAnimationDOLocalMove(gameTitle.gameObject,gameTitlePos);
+        Tweening.Instance.BackDoTweenAnimationDOLocalMove(gameTitle.gameObject, gameTitlePos);
         Tweening.Instance.BackDoTweenAnimationDOLocalMove(btnStartLogin.gameObject, btnStartLoginPos);
         Tweening.Instance.BackDoTweenAnimationDoScale(btnGameHelp.gameObject, btnGameHelpPos);
         Tweening.Instance.BackDoTweenAnimationDoScale(btnExitGame.gameObject, btnExitGamePos);
     }
+
     public void HelpPanelTween()
     {
-        Tweening.Instance.ComeDoTweenAnimationDoScale(HelpPanel.gameObject, new Vector3(1,1,1));
+        Tweening.Instance.ComeDoTweenAnimationDoScale(HelpPanel.gameObject, new Vector3(1, 1, 1));
     }
+
     public void HelpPanelBackTween()
     {
         Tweening.Instance.BackDoTweenAnimationDoScale(HelpPanel.gameObject, HelpPanelPos);
@@ -306,16 +327,19 @@ public class StartMenu : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
         LoginReset();
     }
+
     //登录界面动画播放
     private void LoginCome()
     {
         Tweening.Instance.ComeDoTweenAnimationDoScale(LoginPanelBg.gameObject, new Vector3(1, 1, 1));
     }
+
     //登录界面动画反向播放
     private void LoginReset()
     {
         Tweening.Instance.BackDoTweenAnimationDoScale(LoginPanelBg.gameObject, LoginPanelBgPos);
     }
+
     IEnumerator ComeRegisterAni()
     {
         yield return new WaitForSeconds(0.01f);
@@ -337,32 +361,5 @@ public class StartMenu : MonoBehaviour
     private void RegisterReset()
     {
         Tweening.Instance.BackDoTweenAnimationDoScale(RegisterPanelBg.gameObject, RegisterPanelBgPos);
-    }
-
-    IEnumerator ComeRecordAni()
-    {
-        yield return new WaitForSeconds(0.01f);
-        RecordCome();
-    }
-
-    IEnumerator ResetRecordAni()
-    {
-        yield return new WaitForSeconds(0.01f);
-        RecordReset();
-    }
-
-    //记录界面动画播放
-    private void RecordCome()
-    {
-        Tweening.Instance.ComeDoTweenAnimationDOLocalMove(oldRecord.gameObject, new Vector3(-4,303,0));
-        Tweening.Instance.ComeDoTweenAnimationDOLocalMove(newRecord1.gameObject, new Vector3(-4, 90, 0));
-        Tweening.Instance.ComeDoTweenAnimationDOLocalMove(newRecord2.gameObject, new Vector3(-4, -125, 0));
-    }
-    //记录界面动画反向播放
-    private void RecordReset()
-    {
-        Tweening.Instance.BackDoTweenAnimationDOMove(oldRecord.gameObject, oldRecordPos);
-        Tweening.Instance.BackDoTweenAnimationDOMove(newRecord1.gameObject, newRecord1Pos);
-        Tweening.Instance.BackDoTweenAnimationDOMove(newRecord2.gameObject,newRecord2Pos);
     }
 }

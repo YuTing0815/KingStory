@@ -29,5 +29,10 @@ public class SystemMenu
         systemShopAndPackage = new SystemShopAndPackage();
         systemShopAndPackage.Init();
     }
+
+    public void Release_UIRoot()
+    {
+        UIManager.Instance.Release(_uiRoot);
+    }
 }
 

@@ -12,8 +12,23 @@ public class MapTableData
     public string MapPath;
 }
 
-// 地图表
-public class MapTable : ConfigTableBase<MapTableData, MapTable>
+// 地图表1
+public class MapTableOne : ConfigTableBase<MapTableData, MapTableOne>
 {
     
+}
+// 地图表1
+public class MapTableTwo : ConfigTableBase<MapTableData, MapTableTwo>
+{
+
+}
+// 地图表1
+public class MapTableThree : ConfigTableBase<MapTableData, MapTableThree>
+{
+
+}
+// 地图表1
+public class MapTableFour : ConfigTableBase<MapTableData, MapTableFour>
+{
+
 }

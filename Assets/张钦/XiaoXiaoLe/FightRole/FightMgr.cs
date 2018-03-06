@@ -22,7 +22,7 @@ public class FightMgr : MonoBehaviour
     public Text hurt;
     public Text health;
     public Text shield;
-    
+
     public GameObject[] vec = new GameObject[6];//记录主角和敌人生成的位置
     bool[] isvec = new bool[6];//记录主角和敌人位置是否被占用
 
@@ -330,7 +330,23 @@ public class FightMgr : MonoBehaviour
 
         if (enemyList.Count == 0 && Levelnum > 1)//如果没有敌人,则再次生成,共三波敌人
         {
-            MapTranslate.Instance.MapRun();//地图移动
+            //地图移动  
+            if (SaveIndexMgr.Instance.SaveSceneId == 1)
+            {
+                MapTranslateOne.Instance.MapRun();
+            }
+            if (SaveIndexMgr.Instance.SaveSceneId == 2)
+            {
+                MapTranslateTwo.Instance.MapRun();
+            }
+            if (SaveIndexMgr.Instance.SaveSceneId == 3)
+            {
+                MapTranslateThree.Instance.MapRun();
+            }
+            if (SaveIndexMgr.Instance.SaveSceneId == 4)
+            {
+                MapTranslateFour.Instance.MapRun();
+            }
             roleMove();//人物移动动画
             yield return new WaitForSeconds(2.4f);
             OnceAgain();
