@@ -14,14 +14,18 @@ public class RoleMgr:Singleton<RoleMgr>//全局保存人物属性
     public int Money //全局的金币
     {
         get { return role.Money; }
-        set { role.Money = value; }
+        set { role.Money = value;}
     }
     public List<ItemIndex> BagItem//背包里的物品,在PacketModel控制物品存储和物品的删除
     {
         get {return PacketModel.Instance.packetList; }  
     }
     
-
     public bool isClear = false;
    
+    
+}
+public enum EquipType
+{
+    头盔,武器,鞋,盔甲
 }

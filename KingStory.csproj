@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.2.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -309,6 +311,7 @@
     <Compile Include="Assets\张钦\XiaoXiaoLe\knapsack\Slot.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\knapsack\ToolTip.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\model\PacketModel.cs" />
+    <Compile Include="Assets\张钦\XiaoXiaoLe\model\RewardModel.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\Player.cs" />
   </ItemGroup>
   <ItemGroup>

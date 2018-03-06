@@ -23,8 +23,12 @@ public class FailOrSuccess : Singleton<FailOrSuccess>
         _expAddValue = _successPanel.gameObject.FindComponent<Text>("exp/expAddValue");
         backToMainMapSuccess = _successPanel.gameObject.FindComponent<Button>("btnBackToMainMap");
         backToMainMapSuccess.onClick.AddListener(OnBtnBackToMainMapSuccess);
-        //_coinAddCount.text = RoleMgr.Instance.Role.Money .ToString();
-        //_expAddValue.text = RoleMgr.Instance.Role.Exp.ToString();
+        int[] value = RewardModel.Instance.VectorReward();
+        _coinAddCount.text = value[0].ToString();
+        _expAddValue.text = value[1].ToString();
+        RoleMgr.Instance.Money += value[0];
+        RoleMgr.Instance.Role.Exp += value[1];
+        RoleMgr.Instance.Role.Levelup();
     }
 
     //游戏战斗失败  面板显示
@@ -35,14 +39,12 @@ public class FailOrSuccess : Singleton<FailOrSuccess>
         backToMainMapFail.onClick.AddListener(OnBtnBackMainMapFail);
     }
 
-
     //游戏战斗失败  按钮事件响应
     private void OnBtnBackMainMapFail()
     {
         UIManager.Instance.Release(_failPanel);
         SceneManager.LoadScene("Scenes/Map");
     }
-
 
     //游戏战斗成功 按钮事件响应
     private void OnBtnBackToMainMapSuccess()

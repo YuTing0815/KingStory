@@ -40,8 +40,6 @@ public class SkillAnimator : MonoBehaviour {
         //    AllenemySkill(i);
         //}
     }
-
-
     public void Skill(Human man,int number)//控制某个角色出现特效
     {
         human[man].SetInteger("skill",number);

@@ -134,7 +134,7 @@ public class MainRole
         RoleInfoMgr.Instance.shieldValue.value =Shield;
     }
 
-    public  void Levelup()//升级方法
+    public void Levelup()//升级方法
     {
         if (Exp >= MaxExp)
         {
