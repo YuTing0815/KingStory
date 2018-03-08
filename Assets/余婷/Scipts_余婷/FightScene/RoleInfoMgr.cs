@@ -12,6 +12,8 @@ public class RoleInfoMgr : Singleton<RoleInfoMgr>
     public Text timeRound;
     public Text maxTimeRound;
     public Text coinCounts;
+    public Text diamondCounts;
+    public Text userName;
     public Slider hpValue;
     public Slider shieldValue;
     Button btnBackMainMap;
@@ -25,8 +27,13 @@ public class RoleInfoMgr : Singleton<RoleInfoMgr>
         timeRound = _uiRoot.gameObject.FindComponent<Text>("HuiHe/timeRound");
         maxTimeRound = _uiRoot.gameObject.FindComponent<Text>("HuiHe/maxTimeRound");
         coinCounts = _uiRoot.gameObject.FindComponent<Text>("Coin/counts");
+        coinCounts.text = RoleMgr.Instance.Money.ToString();
+        diamondCounts = _uiRoot.gameObject.FindComponent<Text>("Diamond/counts");
+        diamondCounts.text = RoleMgr.Instance.Diamond.ToString();
         btnBackMainMap = _uiRoot.gameObject.FindComponent<Button>("btnBackMainMap");
         btnBackMainMap.onClick.AddListener(OnBtnBackMainMap);
+        userName = _uiRoot.gameObject.FindComponent<Text>("userName");
+        userName.text = LoginAndReigsterInfo.Instance.CurUserName;
     }
 
     private void OnBtnBackMainMap()

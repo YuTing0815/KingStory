@@ -54,12 +54,9 @@ public class StartMenu : MonoBehaviour
     Button map2;
     Button map3;
     Button map4;
-
-    Button returnStartMenuPanelBtn;
-
     // Use this for initialization
     void Awake()
-    {       
+    {
         Screen.SetResolution(480, 800, false);
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
@@ -127,13 +124,11 @@ public class StartMenu : MonoBehaviour
         map2 = GameRecord.gameObject.FindComponent<Button>("Map2/map2");
         map3 = GameRecord.gameObject.FindComponent<Button>("Map3/map3");
         map4 = GameRecord.gameObject.FindComponent<Button>("Map4/map4");
-        returnStartMenuPanelBtn = GameRecord.gameObject.FindComponent<Button>("ReturnStartMenu");
         //响应按钮事件
         map1.onClick.AddListener(OnMap1Click);
         map2.onClick.AddListener(OnMap2Click);
         map3.onClick.AddListener(OnMap3Click);
         map4.onClick.AddListener(OnMap4Click);
-        returnStartMenuPanelBtn.onClick.AddListener(OnReturnStartMenuClick);
 
         if (SaveIndexMgr.Instance.SaveSceneId != 0)
         {
@@ -143,6 +138,13 @@ public class StartMenu : MonoBehaviour
             GameRecord.gameObject.SetActive(true);
         }
     }
+
+    private void LoginCtrl()
+    {
+    }
+
+
+
 
     //注册界面 取消注册按钮
     private void OnBtnRegisterCancle()
@@ -165,9 +167,24 @@ public class StartMenu : MonoBehaviour
     //注册界面 注册并登录按钮
     private void OnBtnRegisterAndLogin()
     {
-        GameRecord.gameObject.SetActive(true);
-        StartCoroutine(SetActiveObj(RegisterPanel.gameObject));
-        StartCoroutine(ResetRegisterAni());
+
+        if (inputRegisterUserName.text != null && inputRegisterPassWord.text != null && inputRegisterConfirmPassWord.text == inputRegisterPassWord.text)
+        {
+            if (PlayerPrefs.GetString("UserName") == inputRegisterUserName.text)
+            {
+                Debug.Log("该用户已被注册");
+                return;
+            }
+            PlayerPrefs.SetString("UserName", inputRegisterUserName.text);
+            PlayerPrefs.SetString("PassWord", inputRegisterPassWord.text);
+            LoginPanel.gameObject.SetActive(true);
+            StartCoroutine(SetActiveObj(RegisterPanel.gameObject));
+            StartCoroutine(ResetRegisterAni());
+        }
+        else
+        {
+            Debug.Log("请输入您注册的账号");
+        }
     }
 
     //登录面板  按钮点击实现到注册界面
@@ -196,20 +213,27 @@ public class StartMenu : MonoBehaviour
     {
         btnLogin.BtnAudioPlay();
         //服务器验证  TODO
-        GameRecord.gameObject.SetActive(true);
-        StartCoroutine(SetActiveObj(LoginPanel.gameObject));
-        StartCoroutine(ResetLoginAni());
+        string userName = PlayerPrefs.GetString("UserName");
+        string passWord = PlayerPrefs.GetString("PassWord");
+        if (userName != null && passWord != null)
+        {
+            if (inputLoginUserName.text == userName && inputLoginPassWord.text == passWord)
+            {
+                LoginAndReigsterInfo.Instance.CurUserName = inputLoginUserName.text;
+                GameRecord.gameObject.SetActive(true);
+                StartCoroutine(SetActiveObj(LoginPanel.gameObject));
+                StartCoroutine(ResetLoginAni());
+            }
+            else
+            {
+                Debug.Log("用户名或密码错误");
+            }
+        }
+        else
+        {
+            Debug.Log("账户不存在");
+        }
     }
-
-    //关卡面板中   返回首页按钮实现
-    private void OnReturnStartMenuClick()
-    {
-        returnStartMenuPanelBtn.BtnAudioPlay();
-        StartPanel.gameObject.SetActive(true);
-        StartCoroutine(SetActiveObj(GameRecord.gameObject));
-        StartCoroutine(ComeStartAni());
-    }
-
     //关卡面板中 地图3按钮 方法实现
     private void OnMap3Click()
     {

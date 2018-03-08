@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -128,6 +130,7 @@
     <Compile Include="Assets\余婷\Scipts_余婷\DesignMoshi\Singleton.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Extern.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Tweening.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\LoginAndReigsterInfo.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\FailOrSuccess.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateFour.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateOne.cs" />
@@ -146,6 +149,7 @@
     <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WYTwo.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\ClosePackegeBtn.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\MenuMgr.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\EquipMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShopMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShuXingMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\SystemMenu.cs" />
@@ -185,6 +189,7 @@
     <Compile Include="Assets\张钦\XiaoXiaoLe\knapsack\Slot.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\knapsack\ToolTip.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\model\PacketModel.cs" />
+    <Compile Include="Assets\张钦\XiaoXiaoLe\model\RewardModel.cs" />
     <Compile Include="Assets\张钦\XiaoXiaoLe\Player.cs" />
   </ItemGroup>
   <ItemGroup>

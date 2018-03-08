@@ -108,6 +108,7 @@ public class MainRole
     public int MaxShield { get; set; }
     public int Shield { get; set; }
     public int Money { get; set; }
+    public int Diamond { get; set; }
     public Equipment equipment;
     public MainRole()
     {
@@ -120,7 +121,8 @@ public class MainRole
         Exp = 0;
         MaxShield = 50;
         Shield = 50;
-        Money = 0;
+        Money =1000;
+        Diamond = 0;
     }
 
     public void Hurt(int hurt)

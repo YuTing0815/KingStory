@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using DG.Tweening.Core;
+using UnityEditor;
+
 //商城、背包、属性、装备系统
 public class SystemShopAndPackage
 {
@@ -62,13 +64,13 @@ public class SystemShopAndPackage
         }
         BackDoTweem();
         var shopUi = UIManager.Instance.AddUI("Prafbs/UI/Shop/shop", UILayer.Normal);
-        if (shuXing.GetComponent<ShuXingMgr>() == null)
+        if (shuXing.GetComponent<ShopMgr>() == null)
         {
             shopUi.AddComponent<ShopMgr>().Init();
         }
         else
         {
-            shopUi.GetComponent<ShuXingMgr>().Init();
+            shopUi.GetComponent<ShopMgr>().Init();
         }
     }
 
@@ -79,6 +81,15 @@ public class SystemShopAndPackage
             EquipCallBack();
         }
         BackDoTweem();
+        var shopUi = UIManager.Instance.AddUI("Prafbs/UI/Equip/Equip", UILayer.Normal);
+        if (shuXing.GetComponent<EquipMgr>() == null)
+        {
+            shopUi.AddComponent<EquipMgr>().Init();
+        }
+        else
+        {
+            shopUi.GetComponent<EquipMgr>().Init();
+        }
     }
 
     private void OnBtnPackageClick()
