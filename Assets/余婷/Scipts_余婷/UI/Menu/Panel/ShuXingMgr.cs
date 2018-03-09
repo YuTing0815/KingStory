@@ -106,6 +106,8 @@ public class ShuXingMgr : MonoBehaviour
         gameObject.FindComponent<Slider>("ZhanShi/PyValue/PyBg").value = PhyValue;
         gameObject.FindComponent<Text>("MuShi/ShValue/ShBg/shNum").text = Belief.ToString();
         gameObject.FindComponent<Slider>("MuShi/ShValue/ShBg").value = BeliefValue;
+        Name = gameObject.FindComponent<Text>("other/Name").text;
+        Name = LoginAndReigsterInfo.Instance.CurUserName;
         #endregion
 
         #region  //toggle切换和事件响应

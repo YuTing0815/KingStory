@@ -106,6 +106,11 @@ public class ShopMgr : MonoBehaviour
         {
             RoleMgr.Instance.Money -= int.Parse(_coinNum);
             PacketModel.Instance.Save(itemId, itemNum);
+            foreach (var itemIndex in PacketModel.Instance.packetList)
+            {
+                           Debug.Log("背包为物品 ： "+ itemIndex); 
+            }
+            Debug.Log("玩家买完商品剩余的钱 ： " +RoleMgr.Instance.Money);
         }
         _propConfrimPanel.gameObject.SetActive(false);
     }

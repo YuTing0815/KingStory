@@ -103,8 +103,8 @@ public class StartMenu : MonoBehaviour
         //RegisterPanel UI初始化
         RegisterPanel = gameObject.FindComponent<RectTransform>("RegisterPanel");
         RegisterPanelBg = RegisterPanel.gameObject.FindComponent<RectTransform>("bg/registerBg");
-        inputRegisterPassWord = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldUser");
-        inputRegisterUserName = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldPwd");
+        inputRegisterUserName = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldUser");
+        inputRegisterPassWord  = RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputFieldPwd");
         inputRegisterConfirmPassWord =
             RegisterPanel.gameObject.FindComponent<InputField>("bg/registerBg/InputconfirmFieldPwd");
         btnRegisterAndLogin = RegisterPanel.gameObject.FindComponent<Button>("bg/registerBg/btnRegisterAndLogin");
@@ -233,7 +233,7 @@ public class StartMenu : MonoBehaviour
         {
             Debug.Log("账户不存在");
         }
-    }
+    } 
     //关卡面板中 地图3按钮 方法实现
     private void OnMap3Click()
     {
