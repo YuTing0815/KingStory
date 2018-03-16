@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4489493710590536}
-  - component: {fileID: 82965216616050920}
+  - component: {fileID: 82210838247831556}
   m_Layer: 0
   m_Name: map10
   m_TagString: Untagged
@@ -310,7 +310,7 @@ Transform:
   m_Father: {fileID: 4489493710590536}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82965216616050920
+--- !u!82 &82210838247831556
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -19,6 +19,7 @@ public class ClosePackegeBtn:Singleton<ClosePackegeBtn>{
         Package = UIManager.Instance.ReplaceUI("Packet", UILayer.Normal);
         btnClose = Package.gameObject.FindComponent<Button>("Canvas/btnClose");
         btnClose.onClick.AddListener(OnBtnClose);
+        InventoryManager.Instance().UpdateBag();
     }
 
     private void OnBtnClose()

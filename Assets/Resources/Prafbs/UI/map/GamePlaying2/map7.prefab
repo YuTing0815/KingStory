@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4421521623264044}
-  - component: {fileID: 82736474191149834}
+  - component: {fileID: 82392393118076402}
   m_Layer: 0
   m_Name: map7
   m_TagString: Untagged
@@ -310,7 +310,7 @@ Transform:
   m_Father: {fileID: 4421521623264044}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &82736474191149834
+--- !u!82 &82392393118076402
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -319,7 +319,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0fcdc4091babde142bdcc5039277ee55, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3f8f59cbc9ab60f48bc07a8026cedf6e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
