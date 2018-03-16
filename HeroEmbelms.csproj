@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -87,20 +85,20 @@
     <Reference Include="DemiLib">
       <HintPath>Assets/余婷/Demigiant/DemiLib/Core/DemiLib.dll</HintPath>
     </Reference>
-    <Reference Include="DOTweenPro">
-      <HintPath>Assets/余婷/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
+    <Reference Include="DOTween43">
+      <HintPath>Assets/余婷/DOTween/DOTween43.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween50">
+      <HintPath>Assets/余婷/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets/余婷/DOTween/DOTween.dll</HintPath>
     </Reference>
-    <Reference Include="DOTween43">
-      <HintPath>Assets/余婷/DOTween/DOTween43.dll</HintPath>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets/余婷/Demigiant/DOTweenPro/DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="DOTween46">
       <HintPath>Assets/余婷/DOTween/DOTween46.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween50">
-      <HintPath>Assets/余婷/DOTween/DOTween50.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
