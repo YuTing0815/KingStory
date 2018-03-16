@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.2.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -261,18 +259,31 @@
     <Compile Include="Assets\余婷\Scipts_余婷\Common\Timer.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\ConfigTableBase.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\MapTable.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\ConfigTable\ShopTable.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\DesignMoshi\Singleton.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Extern.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\Extern\Tweening.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\LoginAndReigsterInfo.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\FailOrSuccess.cs" />
-    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslate.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateFour.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateOne.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateThree.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\FightScene\Map\MapTranslateTwo.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\FightScene\RoleInfoMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\Lead.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\SaveIndexMgr.cs" />
-    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\UITishi\Tishi.cs" />
-    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WY.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\UITishi\TishiFour.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\UITishi\TishiOne.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\UITishi\TishiThree.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\UITishi\TishiTwo.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WYFour.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WYOne.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WYThree.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\MainMap\WYTwo.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\ClosePackegeBtn.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\MenuMgr.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\EquipMgr.cs" />
+    <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShopMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\Panel\ShuXingMgr.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\SystemMenu.cs" />
     <Compile Include="Assets\余婷\Scipts_余婷\UI\Menu\SystemShopAndPackage.cs" />
