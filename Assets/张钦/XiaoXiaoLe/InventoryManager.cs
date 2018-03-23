@@ -10,7 +10,7 @@ public class InventoryManager:MonoBehaviour {
     {        
         return _instance;
     }
-    void Awake() { _instance = this; }
+    
     //单例
    
     List<Item> itemList;//保存所有物品
@@ -23,8 +23,9 @@ public class InventoryManager:MonoBehaviour {
     Vector2 tooltipPositionOffSet = new Vector2(25,-25);//提示框偏移量
 
     
-    void Start()
+    void Awake()
     {
+        _instance = this;
         tooltip = GameObject.FindObjectOfType<ToolTip>();
         //tooltip.gameObject.SetActive(false);
         ParseItemJson(); //将所有json文件中的物品存入链表
@@ -37,10 +38,12 @@ public class InventoryManager:MonoBehaviour {
     public void UpdateBag()//查找当前已有的物品并显示在背包中
     {
         if (PacketModel.Instance.packetList ==new List<ItemIndex>()) { return; }
+        //Debug.LogError("背包物品加载");
         foreach (var item in PacketModel.Instance.packetList)
         {
             for (int i = 0; i < item.num; i++)
             {
+               // Debug.LogError(item.itemId);
                 Knapsack.Instance.StoreItem(item.itemId);
             }
         }  ;
@@ -165,6 +168,7 @@ public class InventoryManager:MonoBehaviour {
     }
     public Item GetItemById(int id)//传入id，返回物体信息
     {
+        Debug.LogError(id);
         foreach (Item item in itemList)
         {
             if (item.ID == id)

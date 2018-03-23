@@ -105,7 +105,7 @@ public class ShopMgr : MonoBehaviour
         if (RoleMgr.Instance.Money > int.Parse(_coinNum))
         {
             RoleMgr.Instance.Money -= int.Parse(_coinNum);
-            PacketModel.Instance.Save(itemId, itemNum);
+            PacketModel.Instance.Save(itemId, itemNum);            
             foreach (var itemIndex in PacketModel.Instance.packetList)
             {
                            Debug.Log("背包为物品 ： "+ itemIndex); 

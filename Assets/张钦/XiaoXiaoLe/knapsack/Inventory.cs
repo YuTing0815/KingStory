@@ -22,7 +22,7 @@ public class Inventory : MonoBehaviour {
     {
         if (item == null)
         {
-            Debug.Log("不存在");
+            Debug.Log("该物品不存在");
             return false;
         }
         if (item.Capacity == 1)//如果物品容量只为1，则查找空闲格子放入
